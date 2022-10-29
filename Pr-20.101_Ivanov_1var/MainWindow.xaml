@@ -1,0 +1,17 @@
+﻿<Window x:Class="Pr_20._101_Ivanov_1var.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pr_20._101_Ivanov_1var"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Иванов, 1 вариант" HorizontalAlignment="Left" Margin="212,33,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_vvod" HorizontalAlignment="Left" Margin="212,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <Button x:Name="bt_result" Content="Button" HorizontalAlignment="Left" Margin="212,257,0,0" VerticalAlignment="Top" Width="218" Click="bt_result_Click"/>
+        <ListBox x:Name="lb_result" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="212,103,370,208"/>
+        <ListBox x:Name="lb_test" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="468,103,104,208"/>
+
+    </Grid>
+</Window>
